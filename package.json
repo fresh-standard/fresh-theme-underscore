@@ -1,0 +1,32 @@
+{
+  "name": "fresh-theme-underscore",
+  "version": "0.1.0",
+  "description": "An example Underscore.js-driven theme for FRESH / FRESCA résumés and CVs.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fluentdesk/fresh-theme-underscore.git"
+  },
+  "keywords": [
+    "FRESCA",
+    "FRESH",
+    "fresh-theme",
+    "resume",
+    "CV",
+    "HackMyResume",
+    "FluentCV"
+  ],
+  "author": "hacksalot <hacksalot@indevious.com> (http://indevious.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fluentdesk/fresh-theme-underscore/issues"
+  },
+  "main": "theme.json",
+  "homepage": "https://github.com/fluentdesk/fresh-theme-underscore",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "underscore",
+  "description": "An example Underscore.js-driven theme for FRESH / FRESCA résumés and CVs.",
+  "author": "hacksalot <hacksalot@indevious.com> (https://github.com/hacksalot)",
+  "engine": "underscore",
+  "message": "Underscore is an unstyled sample theme intended to illustrate the use of Underscore.js as a template engine. Not for production use."
+}
