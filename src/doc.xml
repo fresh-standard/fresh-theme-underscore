@@ -746,6 +746,7 @@
             <w:gridCol w:w="4428"/>
           </w:tblGrid>
 
+          {% if( r.skills.sets && r.skills.sets.length > 0 ) { %}
           {% r.skills.sets.forEach( function( set, idx, ar) { %}
           {% var kwords = set.skills.join(', '); %}
 
@@ -775,6 +776,7 @@
           </w:tr>
 
           {% }); %}
+          {% } %}
 
         </w:tbl>
         <w:p wsp:rsidR="00427ECC" wsp:rsidRPr="00427ECC" wsp:rsidRDefault="00427ECC" wsp:rsidP="00427ECC"/>
@@ -805,6 +807,7 @@
             <w:gridCol w:w="4428"/>
             <w:gridCol w:w="4428"/>
           </w:tblGrid>
+          {% if (!r.employment.history) r.employment.history = []; %}
           {% r.employment.history.forEach( function( proj, idx, ar) { %}
           <w:tr wsp:rsidR="00C61794" wsp:rsidTr="00C61794">
             <w:tc>
@@ -883,6 +886,7 @@
                   <w:t>{{ XML(proj.summary) }}</w:t>
                 </w:r>
               </w:p>
+              {% if (!proj.highlights) proj.highlights = []; %}
               {% proj.highlights.forEach( function( high, idx, ar) { %}
               <w:p wsp:rsidR="00C61794" wsp:rsidRDefault="00C61794" wsp:rsidP="00C61794">
                 <w:pPr>
@@ -930,6 +934,7 @@
             <w:gridCol w:w="4428"/>
             <w:gridCol w:w="4428"/>
           </w:tblGrid>
+          {% if (!r.education.history) r.education.history = []; %}
           {% r.education.history.forEach( function( edu, idx, ar) { %}
           <w:tr wsp:rsidR="00C61794" wsp:rsidTr="00C61794">
             <w:tc>
@@ -1008,6 +1013,7 @@
                   <w:t>TODO</w:t>
                 </w:r>
               </w:p>
+              {% if (!edu.curriculum) edu.curriculum = []; %}
               {% edu.curriculum.forEach( function( course, idx, ar) { %}
               <w:p wsp:rsidR="00C61794" wsp:rsidRDefault="00C61794" wsp:rsidP="00C61794">
                 <w:pPr>
